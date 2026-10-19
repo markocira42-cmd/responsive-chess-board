@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Maji Maji Web Design | Services</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 id="branding"><span class="highlight">Maji Maji</span> Web Design</h1>
+        <nav id="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="current">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="newsletter services">
+      <div class="container">
+        <h3>Subscribe To Our Newsletter</h3>
+        <form action="#">
+          <input type="email" name="email" placeholder="Enter your email..." required>
+          <input type="submit" name="subscribe" value="Subscribe" class="button-1" required>
+        </form>
+      </div>
+    </section>
+
+    <div class="container">
+      <section id="main-col">
+        <ul>
+          <li class="services">
+            <h3>Website Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><em>Pricing:</em> UGX.400,000 - UGX.1,000,000</p>
+          </li>
+          <li class="services">
+            <h3>Website Maintenance</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><em>Pricing:</em> UGX.150,000 per month</p>
+          </li>
+          <li class="services">
+            <h3>Website Hosting</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><em>Pricing</em>: UGX.50,000 per year</p>
+          </li>
+        </ul>
+      </section>
+
+      <aside id="sidebar">
+        <h3>Get A Quote</h3>
+        <form action="#">
+          <input type="text" value="Mark Ocira" name="name" placeholder="Name" required class="name">
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea placeholder="Type Your Message..."></textarea>
+          <input type="submit" name="send" value="Send" class="button-1" required>
+        </form>
+      </aside>
+    </div>
+
+    <div class="call-now">
+      <button class="button-2">Call Now</button>
+    </div>
+
+    <noscript>
+      const services = document.querySelector('.services');
+      const name = document.querySelector('.name');
+
+      if(name.value === ''){
+        services.innerHTML = "No Name Available.";
+      }else{
+        services.innerHTML = name.value;
+      }
+    </noscript>
+
+    <footer>
+      <p>Maji Maji Web Design, Copyright &copy; 2026.</p>
+    </footer>
+  </body>
+</html>

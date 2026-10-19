@@ -1,0 +1,44 @@
+body{
+  background: #f4f4f4;
+  background-size: cover;
+  background-blend-mode: lighten;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-container{
+  border: 1px solid #000;
+  box-shadow: 0 1px 6px #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8{
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+}
+
+.square{
+  width: 5.5vw;
+  height: 5.5vw;
+}
+
+.black{
+  background-color: #000;
+}
+
+.white{
+  background-color: #f4f4f4;
+}
+
+@media(max-width: 768px){
+  .square{
+    width: 11vw;
+    height: 11vw;
+  }
+}
